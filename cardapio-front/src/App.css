@@ -1,0 +1,51 @@
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 100vw
+}
+  
+
+.card-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 24px;
+  width: 90%;
+  max-width: 1100px;
+  padding: 20px 0;
+}
+
+.novo-button {
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+  font-size: 1.2em;
+  padding: 12px 20px;
+  border-radius: 50px;
+
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 1000;
+  transition: all 0.2s ease-in-out;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+}
+
+.novo-button:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 20px 0px;
+  transform: scale(1.05);
+  border-color: transparent;
+}
+
+@media (max-width: 768px) {
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .card-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}

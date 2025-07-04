@@ -6,6 +6,7 @@ import lombok.*;
 @Entity(name = "foods")
 @Table(name = "foods")
 @Getter
+@Setter
 @NoArgsConstructor
 @AllArgsConstructor
 @EqualsAndHashCode(of = "id")
@@ -24,4 +25,6 @@ public class Food {
         this.title = data.title();
         this.price = data.price();
     }
+
+
 }
